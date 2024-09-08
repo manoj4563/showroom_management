@@ -1,0 +1,101 @@
+/* General Styles */
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #9d884a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Bike container */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bike-item {
+  margin: 20px;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.bike-item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.bike-item img:hover {
+  transform: scale(1.05);
+}
+
+.bike-item p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .App {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    background-color: #5a5a5c;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .bike-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .bike-item p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    background-color: #6a6a6c;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .bike-item p {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
+/* Button Styles */
+button {
+  padding: 12px 20px;
+  background-color: #a06d91;
+  color: rgb(53, 117, 79);
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #163627;
+  color: #ffffff;
+}

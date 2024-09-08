@@ -1,0 +1,33 @@
+div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .home-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .home-container a {
+    display: block;
+    padding: 15px;
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .home-container a:hover {
+    background-color: #0056b3;
+  }
+  
